@@ -8,14 +8,16 @@ import main.Account;
 
 public class AccountTest {
 
+	private Account account;
+
 	@Test
 	public void testAccount() throws Exception {
-		Account account = new Account(10000);
+		account = new Account(10000);
 	}
 	
 	@Test
 	public void testGetBalance() throws Exception {
-		Account account = new Account(10000);
+		account = new Account(10000);
 		assertEquals(10000, account.getBalance());
 
 		account = new Account(1000);
@@ -27,14 +29,14 @@ public class AccountTest {
 	
 	@Test
 	public void testDeposit() throws Exception {
-		Account account = new Account(10000);
+		account = new Account(10000);
 		account.deposit(1000);
 		assertEquals(11000, account.getBalance());
 	}
 
 	@Test
 	public void testWithdraw() throws Exception {
-		Account account = new Account(10000);
+		account = new Account(10000);
 		account.withdraw(1000);
 		assertEquals(9000, account.getBalance());
 	}
