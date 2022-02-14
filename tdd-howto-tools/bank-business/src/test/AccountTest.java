@@ -16,18 +16,12 @@ public class AccountTest {
 	@Test
 	public void testGetBalance() throws Exception {
 		Account account = new Account(10000);
-		if (account.getBalance() != 10000) {
-			fail("getBalance() => " + account.getBalance());
-		}
+		assertEquals(10000, account.getBalance());
 
 		account = new Account(1000);
-		if (account.getBalance() != 1000) {
-			fail();
-		}
+		assertEquals(1000, account.getBalance());
 
 		account = new Account(0);
-		if (account.getBalance() != 0) {
-			fail();
-		}
-}
+		assertEquals(0, account.getBalance());
+	}
 }
