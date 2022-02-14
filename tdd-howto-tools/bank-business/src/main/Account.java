@@ -1,12 +1,13 @@
 package main;
 
 public class Account {
+	private int balance;
 
 	public Account(int i) {
 	}
 
 	public int getBanance() {
-		return 10000;
+		return this.balance;
 	}
 
 }
