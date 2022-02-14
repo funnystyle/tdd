@@ -12,7 +12,7 @@ public class AccountTest {
 	private Account account;
 
 	@Before
-	private void setup() {
+	public void setup() {
 		account = new Account(10000);
 	}
 	
