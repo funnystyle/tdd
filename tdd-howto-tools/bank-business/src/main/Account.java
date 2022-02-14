@@ -11,4 +11,14 @@ public class Account {
 		return this.balance;
 	}
 
+	public void deposit(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void withdraw(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
