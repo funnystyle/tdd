@@ -19,5 +19,15 @@ public class AccountTest {
 		if (account.getBanance() != 10000) {
 			fail();
 		}
-	}
+
+		account = new Account(1000);
+		if (account.getBanance() != 1000) {
+			fail();
+		}
+
+		account = new Account(0);
+		if (account.getBanance() != 0) {
+			fail();
+		}
+}
 }
